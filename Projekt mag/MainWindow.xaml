@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projekt_mag"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525"
+        Background="DimGray">
     <Grid>
-        
+        <StackPanel VerticalAlignment="Center">
+            <Button Background="DarkGray" Height="30" Width="50" RenderTransformOrigin="0.535,1.108" Content="Play" Name="Play" Click="Play_Click"/>
+            <Slider x:Name ="Volume" Orientation="Horizontal" Width="200" IsSnapToTickEnabled="true" Maximum="1" Minimum="-1" ValueChanged="Slider_ValueChanged" TickPlacement="BottomRight" TickFrequency="0.1" RenderTransformOrigin="0.62,0.583" Margin="158,0,159,0"/>
+        </StackPanel>
     </Grid>
 </Window>
